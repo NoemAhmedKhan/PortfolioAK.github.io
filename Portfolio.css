@@ -1,0 +1,876 @@
+:root{
+    --SunFlower: #f1c40f;
+    --Balti: #3d3d3d;
+    --Shadowed: #4b4b4b;
+    --Flirtatious: #fed330;
+    --city: #dfe6e9;
+    --dark: #57606f;
+    --bar: #3498db;
+    --WetASP: #34495e;
+    --MidNight: #2c3e50;
+    --Cono: #95a5a6;
+    --Silver: #bdc3c7;
+    --UFOGreen: #2ed573;
+    --white: #ecf0f1;
+
+
+/* These All Are The Colors To Change The Portfolio Design/Theme */
+
+/* --Balti: #3d3d3d;
+--Shadowed: #4b4b4b;
+--Flirtatious: #fed330;
+--city: #dfe6e9;
+--dark: #57606f;
+--bar: #3498db; */
+
+
+/* --Balti: #82589F;
+--Shadowed: #c56cf0; 
+--Flirtatious: #2ed573; 
+--city: #ffb8b8;
+--dark: #535c68;
+--bar: #2bcbba; */
+
+
+/* --Balti: #ced6e0;
+--Shadowed: #a4b0be;
+--Flirtatious: #B33771;
+--city: #3d3d3d;
+--dark: #2bcbba;
+--bar: #fed330; */
+
+
+/* --Balti: #d35400;
+--Shadowed: #e67e22; 
+--Flirtatious: #feca57;
+--city: #26de81;
+--dark: #82589F;
+--bar: #CAD3C8; */
+
+
+/* --Balti: #e15f41;
+--Shadowed: #e77f67; 
+--Flirtatious: #33d9b2;
+--city: #f7f1e3;
+--dark: #e58e26;
+--bar: #0a3d62; */
+
+
+/* --Balti: #40739e;
+--Shadowed: #487eb0; 
+--Flirtatious: #f19066; 
+--city: #f7b731;
+--dark: #82589F;
+--bar: #dcdde1; */
+
+}
+
+
+
+
+
+
+/* GOOGLE FONTS */
+/* font-family: 'Amarante', cursive;
+font-family: 'Contrail One', cursive;
+font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Rubik', sans-serif; */
+
+
+/* Selection */
+::selection{
+    color: var(--bar);
+}
+
+/* Main Body */
+body{
+    height: auto;
+    width: 100%;
+    background-image: url(Images/Background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main Div ( Left Side Portion ) contain Buttons of ( About me to contact me ) and Links for ( contact me )  */
+.main-div{
+    display: flex;
+    opacity: 0.8;
+    margin: 60px auto;
+    padding: 0px;
+    width: 90%;
+    height: auto;
+}
+
+/* Left side div */
+.left-side-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 40%;
+    height: auto;
+    background-color: var(--Shadowed);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+@keyframes Border-Animate {
+    0% { border-top-color: var(--Flirtatious); border-right-color: var(--city); border-bottom-color: var(--city); border-left-color: var(--city); }
+    25% { border-top-color: var(--city); border-right-color: var(--Flirtatious); border-bottom-color: var(--city); border-left-color: var(--city); }
+    50% { border-top-color: var(--city); border-right-color: var(--city); border-bottom-color: var(--Flirtatious); border-left-color: var(--city); }
+    75% { border-top-color: var(--city); border-right-color: var(--city); border-bottom-color: var(--city); border-left-color: var(--Flirtatious); }
+    100% { border-color: var(--Flirtatious); }
+}
+
+/* Image main profile */
+.left-side-div img{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    border-radius: 50%;
+    margin: 80px 0px;
+    padding: 0px;
+    cursor: pointer;
+    border: 10px solid var(--city);
+    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.75);
+}
+
+.left-side-div img:hover{
+    animation-name: Border-Animate;
+    animation-duration: 0.6s;
+    animation-delay: 0.35ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    border: 10px solid var(--Flirtatious);
+}
+
+/* Buttons */
+.left-side-div .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+    padding: 0px;
+}
+
+.left-side-div .items a{
+    text-decoration: none;
+    color: var(--city);
+    background-color: var(--Shadowed);
+    font-size: 25px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-align: center;
+    border: 4px solid var(--city);
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    margin: 15px 0px;
+    padding: 15px 10px;
+    text-shadow: -4px 3px 0px rgba(0,0,0,0.3);
+}
+
+.left-side-div .items a:hover{
+    animation-name: Border-Animate;
+    animation-duration: 0.6s;
+    animation-delay: 0.35ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    color: var(--Flirtatious);
+    border: 4px solid var(--Flirtatious);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+}
+
+/* Contact me portion */
+.left-side-div .contactme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 0px 0px;
+    padding: 0px;
+    word-break: break-all;
+}
+
+/* Contact me heading */
+.left-side-div .contactme h1{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: var(--Flirtatious);
+    font-size: 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-shadow: -4px 3px 0px rgba(0,0,0,0.3);
+}
+
+/* Contact me Links and Icons */
+.left-side-div .contactme a{
+    height: auto;
+    width: 60%;
+    cursor: pointer;
+}
+
+.left-side-div .contactme a i{
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--city);
+    border: 4px solid var(--Flirtatious);
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.75);
+}
+
+@keyframes Rotate {
+    0% { border-top-color: var(--Flirtatious); border-right-color: var(--city); border-bottom-color: var(--city); border-left-color: var(--city); transform: rotateZ(0deg); }
+    25% { border-top-color: var(--city); border-right-color: var(--Flirtatious); border-bottom-color: var(--city); border-left-color: var(--city); }
+    50% { border-top-color: var(--city); border-right-color: var(--city); border-bottom-color: var(--Flirtatious); border-left-color: var(--city); }
+    75% { border-top-color: var(--city); border-right-color: var(--city); border-bottom-color: var(--city); border-left-color: var(--Flirtatious); }
+    100% { border-color: var(--Flirtatious); transform: rotateZ(360deg); }
+}
+
+.left-side-div .contactme a i:hover{
+    animation-name: Rotate;
+    animation-delay: 0.035ms;
+    animation-duration: 0.85s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    color: var(--Flirtatious);
+    border: 4px solid var(--city);
+}
+
+/* Contact me Icons Name */
+.left-side-div .contactme p{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 4px 8px;
+    font-size: 25px;
+    font-family: 'Contrail One', cursive;
+    color: var(--city);
+    text-shadow: -4px 3px 0px rgba(0,0,0,0.3);
+}
+
+.left-side-div .contactme p:hover{
+    color: var(--bar);
+    text-decoration: underline;
+    transition: all;
+    transition-delay: 0.035ms;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Right Side Portion Div */
+
+.right-side-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 60%;
+    height: auto;
+    background-color: var(--Balti);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Name At Top */
+.right-side-div .name{
+    height: auto;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: -4px 4px 4px rgba(0,0,0,0.3), 4px -4px 4px rgba(0,0,0,0.3);
+}
+
+.right-side-div .name h2{
+    height: auto;
+    width: auto;
+    display: inline-block;
+    margin: auto 5px;
+    font-size: 80px;
+    color: var(--Flirtatious);
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+
+.right-side-div .name h3{
+    display: inline-block;
+    margin: auto 5px;
+    font-size: 45px;
+    color: var(--city);
+    font-family: 'Markazi Text', serif;
+}
+
+.right-side-div .name h4{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    font-size: 25px;
+    color: var(--city);
+    font-family: 'Markazi Text', serif;
+}
+
+/* Horizontal Line in the Portfolio */
+.hr{
+    height: 4px;
+    width: 80%;
+    background-color: var(--city);
+}
+
+/* sub-headings for h1, h2 and p of all Right Side Div ( Sub Portions ) */
+.right-side-div .sub-headings{
+    width: 100%;
+    height: auto;
+    word-break: break-all;
+}
+
+.right-side-div .sub-headings h1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: var(--Flirtatious);
+    font-size: 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-shadow: -4px 3px 0px rgba(0,0,0,0.3);
+}
+
+.right-side-div .sub-headings h2{
+    margin: 2px 4px 0px 20px;
+    padding: 2px;
+    color: var(--Flirtatious);
+    font-size: 26px;
+    text-shadow: -4px 4px 2px rgba(0,0,0,0.3);
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.right-side-div .sub-headings h3{
+    display: inline-block;
+    margin: 0px 4px 0px 20px;
+    padding: 2px;
+    color: var(--Flirtatious);
+    text-shadow: -4px 4px 2px rgba(0,0,0,0.3);
+    font-weight: 500;
+    font-family: 'Contrail One', cursive;
+}
+
+.right-side-div .sub-headings p{
+    text-align: justify;
+    margin: 5px 10px 0px 50px;
+    padding: 0px;
+    color: var(--city);
+    font-size: 20px;
+}
+
+/* Skills ( lines of code are Different ) */
+.right-side-div #cards_div{
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards{
+    width: 45%;
+    height: auto;
+    margin: 5px 0px 0px 0px;
+    background-color: var(--dark);
+}
+
+.right-side-div #skills-div p{
+    margin: 0px 12px;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+    word-wrap: break-word;
+}
+
+.right-side-div #skills-div a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--city);
+    margin: 0px 6px 10px 6px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+.right-side-div #skills-div a:hover{
+    color: var(--bar);
+    text-decoration: underline;
+    transition: all;
+    transition-delay: 0.03ms;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.right-side-div #skills-div .bars{
+    height: 18px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 0px;
+    border-radius: 40px;
+}
+
+/* Work experience h2 and p ( Some lines of code are Different ) */
+.right-side-div #workexperience h2{
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 0px 4px 18px;
+    padding: 0px;
+    word-wrap: break-word;
+}
+
+.right-side-div #workexperience p{
+    display: inline-block;
+    margin: 4px 10px 4px 24px;
+    padding: 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.right-side-div #workexperience .atplace{
+    display: inline-block;
+    color: var(--Flirtatious);
+    margin: 4px 0px 4px 18px;
+    font-size: 22px;
+    text-shadow: -4px 4px 2px rgba(0,0,0,0.3);
+    font-family: 'Familjen Grotesk', sans-serif;
+    word-break: break-all;
+}
+
+.right-side-div #workexperience p a{
+    text-decoration: none;
+    color: var(--city);
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.right-side-div #workexperience p a:hover{
+    color: var(--bar);
+    text-decoration: underline;
+    transition: all;
+    transition-delay: 0.03ms;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+/* Achievements h2, p and p (a) ( Some lines of code are Different ) */
+
+.right-side-div #achievements h2{
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px 4px 20px;
+}
+
+.right-side-div #achievements p{
+    display: inline-block;
+    margin: 4px 6px 4px 22px;
+    padding: 0px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+
+/* Responsive For 1200px to 900px */
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+    /* Main Profile Image */
+    .left-side-div img{
+        width: 280px;
+        height: 280px;
+        border: 8px solid var(--city);
+    }
+
+    /* About me to Contact me items */
+    .left-side-div .items a{
+        width: 60%;
+        padding: 15px 5px;
+        font-size: 22px;
+    }
+
+
+/* Contact me heading */
+.left-side-div .contactme h1{
+    font-size: 35px;
+}
+
+/* Contact me Links and Icons */
+.left-side-div .contactme a{
+    height: auto;
+    width: 85%;
+}
+
+.left-side-div .contactme a i{
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Contact me Icons Name */
+.left-side-div .contactme p{
+    font-size: 25px;
+}
+
+/* Right Side Portion Div */
+/* Name At Top */
+.right-side-div .name{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px 0px;
+    padding: 10px;
+}
+
+.right-side-div .name h2{
+    font-size: 70px;
+}
+
+.right-side-div .name h3{
+    font-size: 35px;
+}
+
+.right-side-div .name h4{
+    font-size: 22px;
+}
+
+/* sub-headings for h1, h2 and p of all Right Side Div ( Sub Portions ) */
+.right-side-div .sub-headings h1{
+    font-size: 35px;
+}
+
+.right-side-div .sub-headings h2{
+    margin: 0px 0px 0px 10px;
+    font-size: 23px;
+}
+
+.right-side-div .sub-headings p{
+    margin: 5px 10px 0px 25px;
+    font-size: 18px;
+}
+
+/* Skills ( lines of code are Different ) */
+.right-side-div #cards_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards{
+    width: 47%;
+}
+
+.right-side-div #skills-div p{
+    padding: 6px 10px;
+}
+
+.right-side-div #skills-div .bars{
+    height: 20px;
+    width: 90%;
+}
+
+.right-side-div #skills-div a{
+    margin: 0px 4px 10px 12px;
+}
+
+/* Work experience paragraph and at place */
+
+.right-side-div #workexperience p{
+    margin: 4px 14px;
+}
+
+.right-side-div #workexperience .atplace{
+    margin: 4px 0px 4px 14px;
+}
+
+
+/* Achievements h2, p and p (a) */
+.right-side-div #achievements h2{
+    margin: 2px 2px 2px 10px;
+}
+
+.right-side-div #achievements p{
+    margin: 6px 14px;
+}
+
+}
+
+/* Responsive At 900px */
+@media only screen and (max-width: 899px) {
+
+/* Main Div */
+.main-div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Left side div */
+.left-side-div{
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+}
+
+/* Image main profile */
+.left-side-div img{
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px 0px 0px;
+}
+
+/* Left Side Buttons */
+.left-side-div .items{
+    display: none;
+}
+
+/* Contact me portion */
+.left-side-div .contactme{
+    width: 90%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Contact Me Top hr */
+.contactme_top_hr{
+    margin: -200px 0px 10px 0px;
+}
+
+/* Contact me heading */
+.left-side-div .contactme h1{
+    display: none;
+}
+
+/* Contact me Links and Icons */
+.left-side-div .contactme a{
+    height: auto;
+    width: auto;
+    margin: 0px 0px 0px 20px;
+}
+
+.left-side-div .contactme a i{
+    font-size: 20px;
+    height: 18px;
+    width: 18px;
+}
+
+/* Contact me Icons Name */
+.left-side-div .contactme p{
+    display: none;
+}
+
+/* Right Side Portion Div */
+
+.right-side-div{
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 0px;
+}
+
+/* Name At Top */
+.right-side-div .name h2{
+    font-size: 52px;
+    margin: 0px;
+}    
+
+.right-side-div .name h3{
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.right-side-div .name h4{
+    font-size: 22px;
+    margin: 0px;
+}
+
+/* All Right Side Div Headings and Paragraphs for h1, h2 and p ( Sub Portions ) */
+
+.right-side-div .sub-headings h1{
+    font-size: 32px;
+}
+
+.right-side-div .sub-headings h2{
+    margin: 0px 0px 0px 10px;
+    font-size: 22px;
+}
+
+.right-side-div .sub-headings p{
+    margin: 2px 10px 0px 15px;
+    font-size: 18px;
+}
+
+/* Skills ( lines of code are Different ) */
+.right-side-div #cards_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    width: 90%;
+    margin: 8px 0px;
+}
+
+.right-side-div #skills-div p{
+    margin: 0px 10px;
+    padding: 4px 10px;
+}
+
+.right-side-div .skills .bars{
+    height: 22px;
+    width: 90%;
+}
+
+/* Work Experience h2, h3, p at place */
+
+.right-side-div #workexperience h2{
+    margin: 2px 0px 2px 12px;
+}
+
+.right-side-div #workexperience .atplace{
+    margin: 2px 0px 2px 13px;
+}
+
+.right-side-div #workexperience p{
+    margin: 2px 15px;
+}
+
+/* Achievements h2, paragraph */
+
+.right-side-div #achievements h2{
+    margin: 4px 2px 4px 12px;
+}
+
+.right-side-div #achievements p{
+    margin: 4px 16px;
+}
+
+}
+
+
+@media only screen and (max-width: 399px) {
+
+    .main-div{
+        position: relative;
+        background-color: var(--Shadowed);
+    }
+
+    /* Main Profile Image */
+    .left-side-div img{
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Buttons Div ( Display none ) Inside Left Side Div */
+    .left-side-div .items{
+        display: none;
+    }
+
+    /* Contact me Links and Icons */
+    .left-side-div .contactme a{
+        margin: 0px 0px 0px 12px;
+    }
+    
+    .left-side-div .contactme a i{
+        font-size: 18px;
+        height: 16px;
+        width: 16px;
+        padding: 12px;
+        border: 2px solid var(--Flirtatious);
+    }
+
+    .left-side-div .contactme a i:hover{
+        border: 2px solid var(--city);
+    }
+
+    /* Name At Top In Portfolio */
+    .right-side-div .name h2{
+        font-size: 42px;
+        margin: 0px;
+    }    
+    
+    .right-side-div .name h3{
+        font-size: 28px;
+        margin: 0px 10px;
+    }
+    
+    .right-side-div .name h4{
+        font-size: 20px;
+        margin: 0px;
+    }
+
+/* Skills ( Paragraph CSS Changing ) */
+.right-side-div #skills-div p{
+    margin: 0px;
+    padding: 6px 10px;
+    text-align: left;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+.right-side-div .cards h3{
+    margin: 0px 0px 2px 10px;
+}
+
+.right-side-div .cards a{
+    margin: 0px 4px 10px 0px;
+}
+
+/* Work Experience h2, h3, p */
+
+.right-side-div #workexperience h2{
+    margin: 2px 0px 2px 6px;
+}
+
+.right-side-div #workexperience .atplace{
+    margin: 2px 0px 2px 6px;
+}
+
+.right-side-div #workexperience p{
+    margin: 2px 10px;
+}
+
+/* Achievements h2, paragraph */
+
+.right-side-div #achievements h2{
+    margin: 3px 1px 2px 6px;
+}
+
+.right-side-div #achievements p{
+    margin: 3px 10px;
+}
+
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="form.css">
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/9dec450bb1.js" crossorigin="anonymous"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="FavIcon/site.webmanifest">
+    <link rel="mask-icon" href="FavIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Contrail+One&family=Familjen+Grotesk:wght@500&family=Fira+Sans+Extra+Condensed:wght@600&family=Lora:wght@600&family=Markazi+Text:wght@600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <title>Portfolio Form</title>
+
+</head>
+<body>
+
+    <div class="main-div">
+
+        <form action="#" id="form">
+
+            <!-- PORTFOLIO IMAGE -->
+            <fieldset class="portfolio_image_fieldset">
+
+                <label> Portfolio Image: </label>
+                <input type="file" id="image" name="image" accept="image/jpeg, image/png, image/jpg">
+                <label for="image"> <i class="fa-solid fa-upload"></i> Upload Image </label>
+
+            </fieldset>
+
+            <!-- ABOUT ME -->
+            <fieldset>
+
+                <legend> About Me </legend>
+
+            <div>
+                <label for="firstname"> First Name: </label>
+                <input type="text" id="firstname" class="aboutme">
+
+                <label for="lastname"> Last Name: </label>
+                <input type="text" id="lastname" class="aboutme">
+
+                <label for="DOB"> Date Of Birth: </label>
+                <input type="date" id="DOB" class="aboutme">
+
+                <label for="field_of_profession"> Expertise: </label>
+                <input type="text" id="job" class="aboutme">
+            </div>
+
+            <div>
+                <label for="myself"> My Self: </label>
+                <textarea name="myself" id="myself" class="aboutme"></textarea>
+
+                <label for="vision"> Vision: </label>
+                <textarea name="vision" id="vision" class="aboutme"></textarea>
+
+                <label for="profession"> Profession: </label>
+                <textarea name="profession" id="profession" class="aboutme"></textarea>
+            </div>
+
+            </fieldset>
+
+            <!-- EDUCATION -->
+            <fieldset id="edu-fieldset">
+
+                <legend> Education </legend>
+
+            <div>
+                <label for="degree"> Degree / Certificate: </label>
+                <input type="text" class="education">
+
+                <label for="institution"> Institution: </label>
+                <input type="text" class="education">
+
+                <label for="describe_degree"> Describe: </label>
+                <textarea name="describe_degree" class="education"></textarea>
+            </div>
+
+            <div>
+                <label for="year_of_starting"> Year Of Starting: </label>
+                <input type="number" class="education">
+
+                <label for="year_of_completion"> Year Of Completion: </label>
+                <input type="number" class="education">
+            </div>
+
+            <div style="display: none; width: 100%; margin: 10px 0px; padding: 0px;">
+                <button type="button" id="education-cancel-btn" style="width: 55px; align-self: flex-end; margin: auto 0px; padding: 4px; font-size: 15px; font-weight: 800; border: 2px solid #CC1919; color: #CC1919; box-shadow: #CC1919 0px 2px 4px, #CC1919 0px 2px 4px; cursor: pointer;"> X </button>
+            </div>
+
+            <button type="button" id="education-btn" class="create-btn"> + </button>
+
+            </fieldset>
+
+            <!-- SKILLS -->
+            <fieldset id="skills-fieldset">
+                
+                <legend> Skills </legend>
+
+            <div>
+                <label for="skill"> Skill: </label>
+                <input type="text" class="skills">
+
+                <select name="bar" class="howGoodAreYou skills">
+                    <option value="" disabled selected> How skillful are you? </option>
+                    <option value="25"> 25% </option>
+                    <option value="50"> 50% </option>
+                    <option value="75"> 75% </option>
+                    <option value="100"> 100% </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="describe_skill"> Describe Skill: </label>
+                <textarea name="describe_skill" class="skills"></textarea>
+
+                <label for="project"> Project Link: </label>
+                <input type="url" class="skills">
+            </div>
+
+            <div style="display: none; width: 100%; margin: 10px 0px; padding: 0px;">
+                <button type="button" id="skills-cancel-btn" style="width: 55px; align-self: flex-end; margin: auto 0px; padding: 4px; font-size: 15px; font-weight: 800; border: 2px solid #CC1919; color: #CC1919; box-shadow: #CC1919 0px 2px 4px, #CC1919 0px 2px 4px; cursor: pointer;"> X </button>
+            </div>
+
+            <button type="button" id="skills-btn" class="create-btn"> + </button>
+
+            </fieldset>
+
+            <!-- WORK EXPERIENCE -->
+            <fieldset id="workExperience-fieldset">
+                
+                <legend> Work Experience </legend>
+
+            <div>
+                <label for="work"> Work: </label>
+                <input type="text" class="work-exp">
+
+                <label for="place"> At Place: </label>
+                <input type="text" class="work-exp">
+
+                <label for="sample_work"> Sample Work: </label>
+                <input type="url" class="work-exp">
+            </div>
+
+            <div>
+                <label for="joindate"> Joining Date: </label>
+                <input type="date" class="work-exp">
+
+                <label for="resigndate"> Resigning Date: </label>
+                <input type="date" class="work-exp">
+
+                <label for="description"> Description: </label>
+                <textarea name="description" class="work-exp"></textarea>
+            </div>
+
+            <div style="display: none; width: 100%; margin: 10px 0px; padding: 0px;">
+                <button type="button" id="workexp-cancel-btn" style="width: 55px; align-self: flex-end; margin: auto 0px; padding: 4px; font-size: 15px; font-weight: 800; border: 2px solid #CC1919; color: #CC1919; box-shadow: #CC1919 0px 2px 4px, #CC1919 0px 2px 4px; cursor: pointer;"> X </button>
+            </div>
+
+            <button type="button" id="workexp-btn" class="create-btn"> + </button>
+
+            </fieldset>
+
+            <!-- ACHIEVEMENTS -->
+            <fieldset id="achievements-fieldset">
+                
+                <legend> Achievements </legend>
+
+            <div>
+                <label for="achiev_title"> Achievement: </label>
+                <input type="text" class="achievements">
+            </div>
+
+            <div>
+                <label for="achieve_descrip"> Description: </label>
+                <textarea name="achieve_descrip" class="achievements"></textarea>
+            </div>
+
+            <div style="display: none; width: 100%; margin: 10px 0px; padding: 0px;">
+                <button type="button" id="achievements-cancel-btn" style="width: 55px; align-self: flex-end; margin: auto 0px; padding: 4px; font-size: 15px; font-weight: 800; border: 2px solid #CC1919; color: #CC1919; box-shadow: #CC1919 0px 2px 4px, #CC1919 0px 2px 4px; cursor: pointer;"> X </button>
+            </div>
+
+            <button type="button" id="achievements-btn" class="create-btn"> + </button>
+
+            </fieldset>
+
+            <!-- CONTACT ME -->
+            <fieldset>
+                
+                <legend> Contact Me </legend>
+
+            <div>
+                <label for="facebook"> Facebook: </label>
+                <input type="url" id="facebook" class="contactme">
+
+                <label for="instagram"> Instagram: </label>
+                <input type="url" id="instagram" class="contactme">
+
+                <label for="twitter"> Twitter: </label>
+                <input type="url" id="twitter" class="contactme">
+
+                <label for="linked_in"> Linked-in: </label>
+                <input type="url" id="linked_in" class="contactme">
+            </div>
+
+            <div>
+                <label for="telegram"> Telegram: </label>
+                <input type="url" id="telegram" class="contactme">
+
+                <label for="email"> Email: </label>
+                <input type="email" id="email" class="contactme">
+
+                <label for="yahoo"> Yahoo Mail: </label>
+                <input type="email" id="yahoo" class="contactme">
+
+                <label for="phone"> Phone no: </label>
+                <input type="text" id="phone" class="contactme">
+            </div>
+
+            </fieldset>
+
+            <!-- SUBMIT BUTTON -->
+            <div id="submit-btn-div">
+                <a href="Portfolio.html"> <button type="button" id="submit-btn" name="Submit"> Submit </button> </a>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+<script src="clearLocalStorage.js"></script>
+<script src="createEducation.js"></script>
+<script src="createSkill.js"></script>
+<script src="createWorkExp.js"></script>
+<script src="createAchievement.js"></script>
+<script type="module" src="Portfolio_Image.js"></script>
+<script type="module" src="getValues.js"></script>
+<noscript> Please Enable JavaScript! </noscript>
+
+</html>

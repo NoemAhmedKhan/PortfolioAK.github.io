@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- IMPORTANT META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="changeDesign.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Contrail+One&family=Familjen+Grotesk:wght@500&family=Fira+Sans+Extra+Condensed:wght@600&family=Lora:wght@600&family=Markazi+Text:wght@600&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/9dec450bb1.js" crossorigin="anonymous"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="FavIcon/site.webmanifest">
+    <link rel="mask-icon" href="FavIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TITLE -->
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="top_bar">
+
+        <div id="icon">
+            <i class="fa-solid fa-bars" onclick="open_close_func('open')"></i>
+            <i class="fa-solid fa-xmark" id="cancel-icon" onclick="open_close_func('close')"></i>
+        </div>
+
+        <div class="top_bar_div" id="top-bar-items">
+            <a href="#about_me"> About Me </a>
+            <a href="#education-div"> Education </a>
+            <a href="#skills-div"> Skills </a>
+            <a href="#workexperience"> Work Experience </a>
+            <a href="#achievements"> Achievements </a>
+        </div>
+
+        <div class="top_bar_div" id="top-bar-colors">
+            <a> Change Design </a>
+            <a id="black" onclick="changeDesign('#3d3d3d', '#4b4b4b', '#fed330', '#dfe6e9', '#57606f', '#3498db')"> </a>
+            <a id="purple" onclick="changeDesign('#82589F', '#c56cf0', '#2ed573', '#ffb8b8', '#535c68', '#2bcbba')"> </a>
+            <a id="white" onclick="changeDesign('#ced6e0', '#a4b0be', '#B33771', '#3d3d3d', '#2bcbba', '#fed330')"> </a>
+            <a id="orange" onclick="changeDesign('#d35400', '#e67e22', '#feca57', '#26de81', '#82589F', '#CAD3C8')"> </a>
+            <a id="light-red" onclick="changeDesign('#e15f41', '#e77f67', '#33d9b2', '#f7f1e3', '#e58e26', '#0a3d62')"> </a>
+            <a id="blue" onclick="changeDesign('#40739e', '#487eb0', '#f19066', '#f7b731', '#82589F', '#dcdde1')"> </a>
+        </div>
+
+    </div>
+
+    <div class="main-div" id="portfolio">
+
+        <div class="left-side-div">
+
+            <img class="img" id="portfolio-img">   </img>
+
+            <div class="items">
+                <a href="#about_me"> About Me </a>
+                <a href="#education-div"> Education </a>
+                <a href="#skills-div"> Skills </a>
+                <a href="#workexperience"> Work Experience </a>
+                <a href="#achievements"> Achievements </a>
+                <a href="#contact_me"> Contact Me </a>
+            </div>
+
+
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <hr class="hr contactme_top_hr">
+            <br> <br>
+
+            <div class="contactme" id="contact_me">
+                <h1>Contact Me</h1>
+                <br>
+
+                <a target="_blank" class="cntct-me"><i class="fa-brands fa-facebook-f"></i>  <p> Facebook </p>  </a> 
+                
+                <a target="_blank" class="cntct-me"><i class="fa-brands fa-instagram"></i>  <p> Instagram </p>  </a> 
+
+                <a target="_blank" class="cntct-me"><i class="fa-brands fa-x-twitter"></i>  <p> Twitter </p>  </a> 
+
+                <a target="_blank" class="cntct-me"><i class="fa-brands fa-linkedin-in"></i>  <p> Linked-in </p>  </a> 
+
+                <a target="_blank" class="cntct-me"><i class="fa-brands fa-telegram"></i>  <p> Telegram </p>  </a> 
+                
+                <a target="_blank" class="cntct-me"><i class="fa-regular fa-envelope"></i>  <p> Email </p>  </a> 
+   
+                <a target="_blank" class="cntct-me"><i class="fa-brands fa-yahoo"></i>  <p> Yahoo Mail </p>  </a> 
+
+                <a class="cntct-me"><i class="fa-solid fa-phone"></i>  <p> </p>  </a> 
+            </div>
+
+            <br> <br>
+            <hr class="hr">
+            <br>
+            
+        </div>
+
+        <div class="right-side-div" id="about_me">
+
+            <div class="name"> <h2 class="about-me"> </h2> <h3 class="about-me"> </h3>
+                <br>
+                <h4 class="about-me"> </h4>
+                <h4 class="about-me"> </h4>
+            </div>
+
+            <hr class="hr">
+            <br>
+
+            <div class="sub-headings">
+
+                <h1>About Me</h1>
+                <br>
+
+                <h2> My Self: </h2>
+                <p class="about-me"> </p>
+                <br>
+
+                <h2> Vision: </h2>
+                <p class="about-me"> </p>
+                <br>
+
+                <h2> Profession: </h2>
+                <p class="about-me"> </p>
+                <br>
+                
+            </div>
+
+            <br> <br>
+            <hr class="hr">
+            <br> <br>
+
+            <div class="sub-headings" id="education-div">
+
+                <h1>Education</h1>
+                <br>
+                
+                <h2 class="education"> </h2>
+                <h3 class="education"> </h3>
+                <h3 class="education"> </h3>
+                <p class="education"> </p>
+
+            </div>
+
+            <br> <br>
+            <hr class="hr">
+            <br> <br>
+
+        <div class="sub-headings" id="skills-div">
+
+                <h1>Skills</h1>
+                <br>
+
+            <div id="cards_div">
+                <div class="cards">
+                    <h2 class="skills"> </h2>
+                    <br>
+                    <div class="bars skills"> </div>
+                    <br>
+                    <p class="skills"> </p>
+                    <br>
+                    <h3> Project Work: </h3> <a target="_blank" class="skills"> </a>
+                </div>
+            </div>
+
+        </div>
+
+            <br> <br>
+            <hr class="hr">
+            <br> <br>
+
+            <div class="sub-headings" id="workexperience">
+
+                <h1>Work Experience</h1>
+                <br>
+                
+                <h2> Work: </h2> <p class="work-experience"> </p>
+                <br>
+                
+                <h3 class="atplace"> At Place: </h3> <p class="work-experience"> </p>
+                <br>
+
+                <h2> Experience: </h2> <p class="work-experience"> </p>
+                <br>
+
+                <h2> Description: </h2> <p class="work-experience">  </p>
+                <br>
+
+                <h2> Sample Work: </h2> <p> <a target="_blank" class="work-experience"> </a> </p>
+                <br> <br> <br>
+                
+            </div>
+
+            <br> <br>
+            <hr class="hr">
+            <br> <br>
+
+            <div class="sub-headings" id="achievements">
+
+                <h1>Achievements</h1>
+                
+                <h2 class="achievements"> </h2> <p class="achievements"> </p>
+                <br>
+
+            </div>
+
+            <br> <br>
+            <hr class="hr">
+            <br> <br>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="create.js"></script>
+<script src="setValues.js"></script>
+<script src="changeDesign.js"></script>
+<noscript> Please Enable JavaScript! </noscript>
+
+</html>

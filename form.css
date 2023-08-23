@@ -1,0 +1,330 @@
+:root{
+    --city: #dfe6e9;
+    --white: #ecf0f1;
+    --white2: #f7f1e3;
+    --purewhite: #ffffff;
+    --coral: #ff7f50;
+    --beniukonBronze: #fa8231;
+    --orangeHibiscus: #fd9644;
+    --Radiant: #ff9f1a;
+    --syntheticPumkin: #ff793f;
+    --Tigerlily: #e15f41;
+    --bar: #3498db;
+    --blurPurple: #4834d4;
+    --azraqBlue: #4a69bd;
+    --DarkBlue: #1e3799;
+    --vanadylBlue: #0097e6;
+    --protossPylon: #00a8ff;
+}
+
+/* GOOGLE FONTS */
+/* font-family: 'Amarante', cursive;
+font-family: 'Contrail One', cursive;
+font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Rubik', sans-serif; */
+
+body{
+    height: auto;
+    width: 100%;
+    background-color: #464646;
+    background-image: url(Images/Background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div{
+    opacity: 0.6;
+    margin: 60px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 90%;
+    height: auto;
+    background-color: var(--purewhite);
+}
+
+/* Form */
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.1);
+}
+
+/* Portfolio Image Fieldset */
+.portfolio_image_fieldset{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid var(--vanadylBlue);
+}
+
+/* Upload Image Button */
+.portfolio_image_fieldset input[type="file"]{
+    display: none;
+}
+
+.portfolio_image_fieldset label[for="image"]{
+    width: 25%;
+    margin: 2px 0px 2px 15px;
+    padding: 4px 6px;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Contrail One', cursive;
+    border: 2px dotted var(--vanadylBlue);
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--vanadylBlue);
+}
+
+.portfolio_image_fieldset label[for="image"] i{
+    margin: 2px 8px;
+}
+
+.portfolio_image_fieldset label[for="image"]:hover{
+    border: 2px solid var(--purewhite);
+    background-color: var(--vanadylBlue);
+    color: var(--purewhite);
+    transition: all;
+    transition-duration: 0.25s;
+    transition-delay: 0.03ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Field Set For All */
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: auto;
+    width: 49%;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border: 2px solid var(--vanadylBlue);
+    position: relative;
+}
+
+fieldset legend{
+    color: var(--vanadylBlue);
+    border: 2px solid var(--vanadylBlue);
+    font-size: 22px;
+    font-family: 'Contrail One', cursive;
+    margin: 0px;
+    padding: 4px 6px;
+    text-shadow: -2px 2px 3px rgba(0,0,0,0.3);
+}
+
+/* Divs inside Fieldset */
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+}
+
+label{
+    margin: 4px 0px 0px 0px;
+    padding: 6px 0px;
+    font-size: 24px;
+    color: var(--Radiant);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-shadow: 2px 1px 2px rgba(0,0,0,0.3);
+}
+
+input{
+    margin: 4px 0px 0px 0px;
+    padding: 8px;
+    height: auto;
+    width: 75%;
+    font-size: 17px;
+    font-family: 'Contrail One', cursive;
+    border: 1px solid var(--vanadylBlue);
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.1);
+}
+
+input:focus{
+    outline-color: var(--vanadylBlue);
+}
+
+textarea{
+    resize: none;
+    height: 55px;
+    width: 90%;
+    margin: 2px 0px;
+    padding: 6px;
+    font-size: 15px;
+    font-family: 'Contrail One', cursive;
+    border: 1px solid var(--vanadylBlue);
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.1);
+}
+
+textarea:focus{
+    outline-color: var(--vanadylBlue);
+}
+
+select{
+    height: auto;
+    width: 80%;
+    margin: 25px 0px 0px 0px;
+    padding: 2px 0px;
+    font-size: 20px;
+    color: var(--vanadylBlue);
+    font-family: 'Contrail One', cursive;
+    border: 1px solid var(--vanadylBlue);
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.1);
+}
+
+select:focus{
+    border: 2px solid var(--vanadylBlue);
+}
+
+.create-btn{
+    height: 35px;
+    width: 65px;
+    border: 2px solid var(--bar);
+    color: var(--bar);
+    background-color: var(--white);
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px 0px;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+.create-btn:hover{
+    box-shadow: var(--bar) 0px 3px 6px, var(--bar) 0px 3px 6px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.15ms;
+    transition-timing-function: ease-out;
+}
+
+/* SUBMIT BUTTON */
+#submit-btn-div{
+    height: auto;
+    width: 100%;
+    border: 0px;
+}
+
+#submit-btn{
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 4px 8px;
+    font-size: 25px;
+    font-family: 'Contrail One', cursive;
+    text-decoration: none;
+    color: var(--vanadylBlue);
+    background-color: var(--purewhite);
+    border: 2px solid var(--vanadylBlue);
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+    text-shadow: 2px 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1);
+}
+
+#submit-btn:hover{
+    background-color: var(--vanadylBlue);
+    color: var(--purewhite);
+    border: 2px solid var(--purewhite);
+    transition: all;
+    transition-duration: 0.25s;
+    transition-delay: 0.03ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1400px) {
+    .main-div{
+        padding: 20px;
+    }
+
+    .portfolio_image_fieldset{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 95%;
+    }
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    fieldset div{
+        width: 100%;
+        margin: 0px 0px 12px 0px;
+    }
+
+    input{
+        width: 40%;
+    }
+
+    textarea{
+        width: 98%;
+    }
+
+    .howGoodAreYou{
+        width: 50%;
+    }
+}
+
+/* RESPONSIVE SEPARATELY FOR ONLY PORTFOLIO IMAGE AT PARTICULAR WIDTH (1000PX TO 600PX) */
+@media only screen and (max-width: 1000px) {
+    .portfolio_image_fieldset label[for="image"]{
+        width: 50%;
+    }
+    select{
+        font-size: 18px;
+    }
+}
+
+/* END RESPONSIVE SEPARATELY FOR ONLY PORTFOLIO IMAGE AT PARTICULAR WIDTH (1000PX TO 600PX) */
+
+@media only screen and (max-width: 600px) {
+    input{
+        width: 60%;
+    }
+    .portfolio_image_fieldset{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .portfolio_image_fieldset label[for="image"]{
+        width: 90%;
+        font-size: 20px;
+        margin: 0px 4px;
+    }
+
+    .howGoodAreYou{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    input{
+        width: 98%;
+    }
+    select{
+        font-size: 16px;
+    }
+
+    .howGoodAreYou{
+        width: 100%;
+    }
+}
